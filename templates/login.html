@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+{% block body %}
+        <div style="margin-top: 50px;" class="container">
+            <h1 style="text-align:center;">To-Do List Log In / Sign In</h1>
+            <hr>
+            <p class="h4">Existing User Log In</p>
+            <form method="post">
+                <div class="form-group">
+                    Username: <input class="form-control" type="text" name="content" id="name"><br>
+                    Password: <input class="form-control" type="text" name="pass" id="pass">
+                </div>
+                <button class="btn btn-success" type="submit" formaction="/">Log In</button>
+            </form>
+            <hr>
+            <p class="h4">New User Sign In</p>
+            <form method="post">
+                <div class="form-group">
+                    Create Username: <input class="form-control" type="text" name="signcontent" id="name"><br>
+                    Create Password: <input class="form-control" type="text" name="signpass" id="pass">
+                </div>
+                <button class="btn btn-primary" type="submit" formaction="/">Sign In</button>
+            </form>
+            <hr>
+        </div>
+{% endblock %}
